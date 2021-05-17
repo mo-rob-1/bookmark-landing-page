@@ -14,6 +14,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <link href="../node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
@@ -27,7 +28,11 @@
           </div>
 
           <div class="header__hamburger-wrapper">
-            <img class="header__hamburger-icon" id="toggle_btn" src="images/icon-hamburger.svg" alt="Hamburger icon" />
+            <button class="hamburger hamburger--collapse" id="hamburger" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
           </div>
         </div>
 
@@ -36,14 +41,15 @@
             <li class="header__nav-list-item"><a class="header__nav-link" href="#">Features</a></li>
             <li class="header__nav-list-item"><a class="header__nav-link" href="#">Pricing</a></li>
             <li class="header__nav-list-item"><a class="header__nav-link" href="#">Contact</a></li>
-            <li class="header__nav-list-item"><a class="header__nav-link" href="#">Login</a></li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link header__nav-link--mobile-border" href="#">Login</a>
+            </li>
+            <div class="header__socials-container">
+              <a class="header__social-icon-link" href="#"><i class="fab fa-facebook-square header__fb-icon"></i></a>
+              <a class="header__social-icon-link" href="#"><i class="fab fa-twitter header__twitter__icon"></i></a>
+            </div>
           </ul>
         </nav>
-
-        <div class="header__socials-container">
-          <i class="fab fa-facebook-square header__fb-icon"></i>
-          <i class="fab fa-twitter header__twitter__icon"></i>
-        </div>
       </div>
     </header>
 

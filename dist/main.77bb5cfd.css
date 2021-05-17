@@ -337,8 +337,122 @@ template {
   display: none;
 }
 
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  width: 30px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeSpeed;
+  font-family: "Rubik", sans-serif;
+}
+
 /**
 * Basic typography style for copy text
 */
+.header__nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.header__container {
+  padding: 1rem;
+}
+.header__wrapper-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding-top: 1rem;
+  z-index: 30;
+}
+.header__logo {
+  float: left;
+}
+.header__logo-wrapper {
+  z-index: 30;
+}
+.header__nav {
+  display: none;
+}
+.header__nav-list {
+  padding: 0;
+  display: grid;
+  margin-top: 6rem;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  background-color: rgba(37, 43, 70, 0.884);
+  flex-direction: column;
+  overflow: scroll;
+}
+.header__nav-list-item {
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+  padding: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.header__nav-list-item:nth-child(1) {
+  border-top: 1px solid grey;
+  margin-top: 8rem;
+}
+.header__nav-list-item:nth-child(4) {
+  border-bottom: none;
+  margin-top: 1rem;
+}
+.header__nav-link--mobile-border {
+  border: 2px solid #fff;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+}
+@media only screen and (min-width: 375px) {
+  .header__nav-link--mobile-border {
+    padding: 1rem 5rem;
+  }
+}
+.header__socials-container {
+  position: relative;
+  top: 10rem;
+  font-size: 1.6rem;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+.header__fb-icon {
+  margin-right: 1.8rem;
+}
+.header__social-icon-link {
+  color: #fff;
+}
+
+.hamburger {
+  float: right;
+  padding: 0;
+  position: relative;
+  left: 0.5rem;
+  z-index: 10;
+}
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
