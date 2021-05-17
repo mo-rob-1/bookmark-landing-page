@@ -404,7 +404,7 @@ body {
   right: 0;
   text-align: center;
   display: flex;
-  background-color: rgba(37, 43, 70, 0.884);
+  background-color: rgba(37, 43, 70, 0.952);
   flex-direction: column;
   overflow: scroll;
 }
@@ -453,6 +453,19 @@ body {
   position: relative;
   left: 0.5rem;
   z-index: 10;
+}
+
+.hero {
+  margin-top: 4rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+  border-bottom: 1px solid red;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
