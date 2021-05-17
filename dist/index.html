@@ -48,11 +48,67 @@
 
     <main>
       <section class="hero">
-        <div class="hero__container"></div>
+        <div class="hero__container">
+          <div class="hero__image-wrapper">
+            <img class="hero__image" src="/illustration-hero.4e84ddbe.svg" alt="Hero Illustration of a tablet device">
+          </div>
+          <div class="hero__text-container">
+            <h1 class="hero__title">A Simple Bookmark Manager</h1>
+            <p class="hero__desc">
+              A clean and simple interface to organize your favourite websites. Open a new browser tab and see your
+              sites load instantly. Try it for free.
+            </p>
+            <div class="hero__btn-wrapper">
+              <button class="hero__btn hero__btn--blue" type="button">Get it on Chrome</button>
+              <button class="hero__btn hero__btn--grey" type="button">Get it on Firefox</button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="features">
-        <div class="features__container"></div>
+        <div class="features__container">
+          <div class="features__text-wrapper">
+            <h2 class="features__title">Features</h2>
+            <p class="features__desc">
+              Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
+              between your devices so you can access them on the go.
+            </p>
+          </div>
+
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen">Simple Bookmarking</button>
+            <button class="tablinks" onclick="openTab(event, 'Paris')">Speedy Searching</button>
+            <button class="tablinks" onclick="openTab(event, 'Tokyo')">Easy Sharing</button>
+          </div>
+
+          <div id="London" class="tabcontent">
+            <h3 class="features__tabTitle">Bookmark in one click</h3>
+            <p class="features__tabDesc">
+              Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
+              over how you manage your favourite sites.
+            </p>
+            <a class="features__tabLink" href="#">More Info</a>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <h3 class="features__tabTitle">Intelligent search</h3>
+            <p class="features__tabDesc">
+              Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all
+              of your bookmarks.
+            </p>
+            <a class="features__tabLink" href="#">More Info</a>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <h3 class="features__tabTitle">Share your bookmarks</h3>
+            <p class="features__tabDesc">
+              Easily share your bookmarks and collections with others. Create a shareable link that you can send at the
+              click of a button.
+            </p>
+            <a class="features__tabLink" href="#">More Info</a>
+          </div>
+        </div>
       </section>
 
       <section class="download">
@@ -69,6 +125,27 @@
       <small class="footer__author">Challenge by&nbsp;<a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. Coded
         by&nbsp;<a href="http://mocodes.co.uk/" target="_blank">Mo.</a></small>
     </footer>
+
+    <script>function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+} // Get the element with id="defaultOpen" and click on it
+
+
+document.getElementById("defaultOpen").click();</script>
 
     <script src="/script.d573be0b.js"></script>
   </body>
