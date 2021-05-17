@@ -1,2 +1,1 @@
-import "./PopUp";
-import "./ConsoleLog";
+console.log("Hello world!");
