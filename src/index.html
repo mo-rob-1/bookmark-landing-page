@@ -4,11 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <title>Bookmark Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__wrapper-mobile">
+          <div class="header__logo-wrapper">
+            <a class="header__logo-link" href="#"
+              ><img class="header__logo" src="images/logo-bookmark.svg" alt="Bookmark Logo"
+            /></a>
+          </div>
+
+          <div class="header__hamburger-wrapper">
+            <img class="header__hamburger-icon" id="toggle_btn" src="images/icon-hamburger.svg" alt="Hamburger icon" />
+          </div>
+        </div>
+
+        <nav class="header__nav show-nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item"><a class="header__nav-link" href="#">Features</a></li>
+            <li class="header__nav-list-item"><a class="header__nav-link" href="#">Pricing</a></li>
+            <li class="header__nav-list-item"><a class="header__nav-link" href="#">Contact</a></li>
+            <li class="header__nav-list-item"><a class="header__nav-link" href="#">Login</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__socials-container">
+          <i class="fab fa-facebook-square header__fb-icon"></i>
+          <i class="fab fa-twitter header__twitter__icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__container"></div>
+      </section>
+
+      <section class="features">
+        <div class="features__container"></div>
+      </section>
+
+      <section class="download">
+        <div class="download__container"></div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter__container"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container"></div>
+      <small class="footer__author"
+        >Challenge by&nbsp;<a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. Coded
+        by&nbsp;<a href="http://mocodes.co.uk/" target="_blank">Mo.</a></small
+      >
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
