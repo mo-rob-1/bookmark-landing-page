@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.download-card {
+  background-color: $White;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  padding-top: 3.6rem;
+  padding-bottom: 2rem;
+  &__wrapper {
+    display: grid;
+    gap: 2rem;
+  }
+  &__dots {
+    width: 100%;
+  }
+  &__btn--padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &__title {
+    color: $VeryDarkBlue;
+  }
+  &__version {
+    font-size: 0.9rem;
+    color: $GrayishBlue;
+  }
+}
