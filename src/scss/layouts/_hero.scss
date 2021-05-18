@@ -1,5 +1,8 @@
 .hero {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  &__container {
+    padding: 1rem;
+  }
   &__image {
     width: 100%;
   }
