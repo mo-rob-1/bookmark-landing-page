@@ -1,3 +1,4 @@
+@use '../abstracts' as *;
 // /* Style the tab */
 // .tab {
 //   float: left;
@@ -27,10 +28,6 @@
 // }
 
 /* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-  border-bottom: 1px solid red;
-}
 
 // /* Style the tab content */
 // .tabcontent {
@@ -41,3 +38,42 @@
 //   border-left: none;
 //   height: 300px;
 // }
+
+.features {
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  &__tab button.active {
+    border-bottom: 4px solid $SoftRed;
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+  &__tablinks {
+    background-color: $White;
+    border: none;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  &__tablinks:nth-child(3) {
+    margin-right: 0;
+  }
+  &__line {
+    border-bottom: 1px solid $GrayishBlue;
+  }
+  &__line:nth-child(1) {
+    border-top: 1px solid $GrayishBlue;
+  }
+  &__tabcontent {
+    margin-top: 4rem;
+  }
+  &__tabImg {
+    width: 100%;
+  }
+  &__tabText-wrapper {
+    margin-top: 3rem;
+  }
+}
