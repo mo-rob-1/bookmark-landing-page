@@ -15,6 +15,9 @@
       crossorigin="anonymous"
     />
     <link href="../node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css" />
+
+    <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
@@ -65,10 +68,10 @@
               A clean and simple interface to organize your favourite websites. Open a new browser tab and see your
               sites load instantly. Try it for free.
             </p>
-            <div class="hero__btn-wrapper">
-              <button class="hero__btn hero__btn--blue" type="button">Get it on Chrome</button>
-              <button class="hero__btn hero__btn--grey" type="button">Get it on Firefox</button>
-            </div>
+          </div>
+          <div class="hero__btn-wrapper">
+            <button class="hero__btn hero__btn--blue" type="button">Get it on Chrome</button>
+            <button class="hero__btn hero__btn--grey" type="button">Get it on Firefox</button>
           </div>
         </div>
       </section>
@@ -83,66 +86,244 @@
             </p>
           </div>
 
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen">Simple Bookmarking</button>
-            <button class="tablinks" onclick="openTab(event, 'Paris')">Speedy Searching</button>
-            <button class="tablinks" onclick="openTab(event, 'Tokyo')">Easy Sharing</button>
+          <div class="features__tab">
+            <div class="features__line">
+              <button class="features__tablinks" onclick="openTab(event, 'London')" id="defaultOpen">
+                Simple Bookmarking
+              </button>
+            </div>
+            <div class="features__line">
+              <button class="features__tablinks" onclick="openTab(event, 'Paris')">Speedy Searching</button>
+            </div>
+            <div class="features__line">
+              <button class="features__tablinks" onclick="openTab(event, 'Tokyo')">Easy Sharing</button>
+            </div>
           </div>
 
-          <div id="London" class="tabcontent">
-            <h3 class="features__tabTitle">Bookmark in one click</h3>
-            <p class="features__tabDesc">
-              Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
-              over how you manage your favourite sites.
-            </p>
-            <a class="features__tabLink" href="#">More Info</a>
+          <div id="London" class="features__tabcontent">
+            <div class="feautures__tabImg">
+              <img
+                class="features__tabImg"
+                src="images/illustration-features-tab-1.svg"
+                alt="Illustration of a tablet device"
+              />
+            </div>
+
+            <div class="features__tabText-wrapper">
+              <h3 class="features__tabTitle">Bookmark in one click</h3>
+              <p class="features__tabDesc">
+                Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
+                over how you manage your favourite sites.
+              </p>
+              <a class="features__tabLink" href="#">More Info</a>
+            </div>
           </div>
 
-          <div id="Paris" class="tabcontent">
-            <h3 class="features__tabTitle">Intelligent search</h3>
-            <p class="features__tabDesc">
-              Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all
-              of your bookmarks.
-            </p>
-            <a class="features__tabLink" href="#">More Info</a>
+          <div id="Paris" class="features__tabcontent">
+            <div class="feautures__tabImg">
+              <img
+                class="features__tabImg"
+                src="images/illustration-features-tab-2.svg"
+                alt="Illustration of a webpage"
+              />
+            </div>
+            <div class="features__tabText-wrapper">
+              <h3 class="features__tabTitle">Intelligent search</h3>
+              <p class="features__tabDesc">
+                Our powerful search feature will help you find saved sites in no time at all. No need to trawl through
+                all of your bookmarks.
+              </p>
+              <a class="features__tabLink" href="#">More Info</a>
+            </div>
           </div>
 
-          <div id="Tokyo" class="tabcontent">
-            <h3 class="features__tabTitle">Share your bookmarks</h3>
-            <p class="features__tabDesc">
-              Easily share your bookmarks and collections with others. Create a shareable link that you can send at the
-              click of a button.
-            </p>
-            <a class="features__tabLink" href="#">More Info</a>
+          <div id="Tokyo" class="features__tabcontent">
+            <div class="feautures__tabImg">
+              <img
+                class="features__tabImg"
+                src="images/illustration-features-tab-3.svg"
+                alt="Illustration of a webpage"
+              />
+            </div>
+
+            <div class="features__tabText-wrapper">
+              <h3 class="features__tabTitle">Share your bookmarks</h3>
+              <p class="features__tabDesc">
+                Easily share your bookmarks and collections with others. Create a shareable link that you can send at
+                the click of a button.
+              </p>
+              <a class="features__tabLink" href="#">More Info</a>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="download">
-        <div class="download__container"></div>
+        <div class="download__container">
+          <div class="download__text-wrapper">
+            <h2 class="download__title">Download the extension</h2>
+            <p class="download__desc">
+              We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to
+              prioritize.
+            </p>
+          </div>
+          <div class="download-card__wrapper">
+            <div class="download-card">
+              <img class="download-card__image" src="images/logo-chrome.svg" alt="Google Chrome Logo" />
+              <h3 class="download-card__title">Add to Chrome</h3>
+              <p class="download-card__version">Minimum version 62</p>
+              <img class="download-card__dots" src="images/bg-dots.svg" alt="Dots" />
+              <div class="download-card__btn--padding">
+                <button class="download-card__btn" type="button">Add & Install Extension</button>
+              </div>
+            </div>
+
+            <div class="download-card">
+              <img class="download-card__image" src="images/logo-firefox.svg" alt="Firefox Logo" />
+              <h3 class="download-card__title">Add to Firefox</h3>
+              <p class="download-card__version">Minimum version 55</p>
+              <img class="download-card__dots" src="images/bg-dots.svg" alt="Dots" />
+              <div class="download-card__btn--padding">
+                <button class="download-card__btn" type="button">Add & Install Extension</button>
+              </div>
+            </div>
+
+            <div class="download-card">
+              <img class="download-card__image" src="images/logo-opera.svg" alt="Opera Logo" />
+              <h3 class="download-card__title">Add to Opera</h3>
+              <p class="download-card__version">Minimum version 46</p>
+              <img class="download-card__dots" src="images/bg-dots.svg" alt="Dots" />
+              <div class="download-card__btn--padding">
+                <button class="download-card__btn" type="button">Add & Install Extension</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="faq__container">
+          <div class="faq__text-wrapper">
+            <h2 class="faq__title">Frequently Asked Questions</h2>
+            <p class="faq__desc">
+              Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email
+              us.
+            </p>
+          </div>
+
+          <div class="faq__accordion-wrapper">
+            <div class="accordion-container">
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button class="ac-trigger">What is Bookmark?</button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies
+                    fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                  </p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button class="ac-trigger">How can I request a new browser?</button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdiet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button class="ac-trigger">Is there a mobile app?</button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">
+                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                    sollicitudin ex et ultricies bibendum.
+                  </p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button class="ac-trigger">What about other Chromium browsers?</button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text">
+                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                    vitae neque eget nisl gravida pellentesque non ut velit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="faq__btnLink" href="#">More Info</a>
+        </div>
       </section>
 
       <section class="newsletter">
-        <div class="newsletter__container"></div>
+        <div class="newsletter__container">
+          <div class="newsletter__text-wrapper">
+            <p class="newsletter__title-1">35,000+ Already Joined</p>
+            <h2 class="newsletter__title-2">Stay up-to-date with what we’re doing</h2>
+          </div>
+
+          <form class="newsletter__form-wrapper">
+            <input
+              class="newsletter__form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+            <input class="newsletter__submit-btn" type="submit" value="Contact Us" />
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__container"></div>
+      <div class="footer__container">
+        <div class="footer__logo-wrapper">
+          <img class="footer__logo" src="images/logo-bookmark-white.svg" alt="Bookmark Logo" />
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Features</a></li>
+            <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Pricing</a></li>
+            <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__socials-container">
+          <a class="footer__social-icon-link" href="#"><i class="fab fa-facebook-square footer__fb-icon"></i></a>
+          <a class="footer__social-icon-link" href="#"><i class="fab fa-twitter footer__twitter-icon"></i></a>
+        </div>
+      </div>
       <small class="footer__author"
-        >Challenge by&nbsp;<a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. Coded
-        by&nbsp;<a href="http://mocodes.co.uk/" target="_blank">Mo.</a></small
+        >Challenge by&nbsp;<a class="footer__author-link" href="https://www.frontendmentor.io/" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by&nbsp;<a class="footer__author-link" href="http://mocodes.co.uk/" target="_blank">Mo.</a></small
       >
     </footer>
 
     <script>
       function openTab(evt, cityName) {
         var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
+        tabcontent = document.getElementsByClassName("features__tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
-        tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName("features__tablinks");
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
@@ -152,6 +333,8 @@
 
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
+
+      new Accordion(".accordion-container");
     </script>
 
     <script src="js/script.js"></script>
