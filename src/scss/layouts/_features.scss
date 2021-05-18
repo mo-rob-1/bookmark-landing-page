@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.features {
+  margin-top: 6rem;
+  &__container {
+    padding: 1rem;
+    text-align: center;
+  }
+}
