@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.download {
+  margin-top: 6rem;
+  &__container {
+    padding: 1rem;
+    text-align: center;
+  }
+  &__text-wrapper {
+    margin-bottom: 3rem;
+  }
+}
