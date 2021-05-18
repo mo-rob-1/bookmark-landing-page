@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.newsletter {
+  margin-top: 6rem;
+  background-color: $SoftBlue;
+  &__container {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+}
