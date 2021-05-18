@@ -3,9 +3,121 @@
 */
 @use '../abstracts' as *;
 
-.header__nav-link {
-  color: $White;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.5rem;
+// Header Typography Styling
+.header {
+  &__nav-link {
+    color: $White;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+}
+
+// Hero Typography Styling
+.hero {
+  &__text-container,
+  &__btn-wrapper {
+    text-align: center;
+  }
+  &__title {
+    line-height: 1.5;
+    color: $VeryDarkBlue;
+  }
+  &__desc {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: $GrayishBlue;
+  }
+}
+
+// Features Typography Styling
+.features {
+  &__desc {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: $GrayishBlue;
+  }
+  &__tabTitle {
+    color: $VeryDarkBlue;
+  }
+  &__tabDesc {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: $GrayishBlue;
+  }
+  &__tabLink {
+    display: none;
+  }
+}
+
+// Download Section Typography Styling
+.download {
+  &__title {
+    color: $VeryDarkBlue;
+  }
+  &__desc {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: $GrayishBlue;
+  }
+}
+
+// FAQ Section Typography Styling
+.faq {
+  &__title {
+    color: $VeryDarkBlue;
+  }
+  &__desc {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: $GrayishBlue;
+  }
+}
+
+// Newsletter Section Typography Styling
+.newsletter {
+  &__title-1 {
+    color: $White;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 0.9rem;
+  }
+  &__title-2 {
+    color: $White;
+    font-weight: 400;
+  }
+}
+
+// Footer Typography Styling
+.footer {
+  &__nav-link,
+  &__fb-icon,
+  &__twitter-icon,
+  &__author,
+  &__author-link {
+    color: $White;
+  }
+  &__fb-icon,
+  &__twitter-icon {
+    font-size: 1.6rem;
+  }
+  &__fb-icon {
+    margin-right: 2.2rem;
+  }
+  &__nav-list {
+    margin-top: 2.8rem;
+    margin-bottom: 3rem;
+  }
+  &__nav-list-item {
+    margin-bottom: 2.5rem;
+  }
+  &__nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+  }
+  &__author {
+    font-size: 0.7rem;
+  }
 }
