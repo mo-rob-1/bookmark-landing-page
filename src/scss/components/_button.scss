@@ -1,0 +1,77 @@
+@use '../abstracts' as *;
+
+// Hero Button Styling
+.hero {
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  &__btn {
+    border: 0;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    cursor: pointer;
+  }
+  &__btn:nth-child(2) {
+    margin-right: 0;
+  }
+  .hero__btn--blue {
+    background-color: $SoftBlue;
+    color: $White;
+  }
+  .hero__btn--grey {
+    color: $VeryDarkBlue;
+  }
+}
+
+// Download Card Button Styling
+.download-card {
+  &__btn {
+    background-color: $SoftBlue;
+    color: $White;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border: 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    margin-top: 1.8rem;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+// FAQ Section Button Styling
+.faq {
+  &__btnLink {
+    border: 0;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    cursor: pointer;
+    background-color: $SoftBlue;
+    color: $White;
+    text-decoration: none;
+  }
+}
+
+// Newsletter Button Styling
+.newsletter {
+  &__submit-btn {
+    padding: 1rem;
+    background-color: $SoftRed;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4rem;
+    color: $White;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+}
