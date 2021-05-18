@@ -1,1 +1,21 @@
+@use '../abstracts' as *;
 
+.footer {
+  background-color: $VeryDarkBlue;
+  &__container {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  &__nav-list {
+    padding: 0;
+  }
+  &__nav-list-item {
+    list-style-type: none;
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.2rem;
+  }
+}
