@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.ac .ac-trigger::after {
+  content: url("../images/icon-arrow.svg");
+}
+.ac-text {
+  text-align: left;
+  font-family: $PrimaryFont !important;
+  line-height: 2 !important;
+  color: $GrayishBlue !important;
+}
+.ac {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+.ac .ac-trigger {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  color: $VeryDarkBlue;
+  font-family: $PrimaryFont;
+  font-weight: 400;
+}
