@@ -2,11 +2,37 @@
 
 .download {
   margin-top: 6rem;
+  @include responsive(tablet) {
+    margin-top: 12rem;
+  }
+  @include responsive(laptop) {
+    margin-top: 16rem;
+  }
   &__container {
     padding: 1rem;
     text-align: center;
+    @include responsive(mobile-md) {
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+    }
+    @include responsive(laptop) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 1300px;
+    }
   }
   &__text-wrapper {
     margin-bottom: 3rem;
+    @include responsive(tablet) {
+      margin: 0 auto;
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+    @include responsive(laptop-lg) {
+      max-width: 500px;
+    }
   }
 }

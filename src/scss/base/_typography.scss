@@ -10,6 +10,16 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
+    @include responsive(laptop) {
+      color: $VeryDarkBlue;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  }
+  &__nav-link--mobile-border {
+    @include responsive(laptop) {
+      color: $White;
+    }
   }
 }
 
@@ -22,11 +32,24 @@
   &__title {
     line-height: 1.5;
     color: $VeryDarkBlue;
+    @include responsive(tablet) {
+      text-align: left;
+    }
+    @include responsive(laptop-lg) {
+      font-size: 2.7rem;
+    }
   }
   &__desc {
     line-height: 1.6;
     font-size: 0.9rem;
     color: $GrayishBlue;
+    @include responsive(tablet) {
+      text-align: left;
+    }
+    @include responsive(laptop) {
+      font-size: 1rem;
+      max-width: 400px;
+    }
   }
 }
 
@@ -36,17 +59,57 @@
     line-height: 1.6;
     font-size: 0.9rem;
     color: $GrayishBlue;
+    @include responsive(laptop-lg) {
+      font-size: 1rem;
+    }
   }
   &__tabTitle {
     color: $VeryDarkBlue;
+    @include responsive(laptop) {
+      font-size: 1.2rem;
+    }
   }
   &__tabDesc {
     line-height: 1.6;
     font-size: 0.9rem;
     color: $GrayishBlue;
+    @include responsive(laptop) {
+      margin: 0 auto;
+      max-width: 700px;
+      margin-bottom: 1rem;
+    }
+    @include responsive(laptop-lg) {
+      font-size: 1rem;
+    }
+  }
+  &__tabLink-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include responsive(tablet) {
+      justify-content: left;
+    }
   }
   &__tabLink {
     display: none;
+    border: 0;
+    padding: 1rem 1.7rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    cursor: pointer;
+    background-color: $SoftBlue;
+    color: $White;
+    text-decoration: none;
+    @include responsive(tablet) {
+      display: block;
+    }
+  }
+  &__tabText-wrapper {
+    @include responsive(tablet) {
+      text-align: left;
+    }
   }
 }
 
@@ -59,6 +122,9 @@
     line-height: 1.6;
     font-size: 0.9rem;
     color: $GrayishBlue;
+    @include responsive(laptop-lg) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -66,11 +132,20 @@
 .faq {
   &__title {
     color: $VeryDarkBlue;
+    line-height: 1.5;
   }
   &__desc {
     line-height: 1.6;
     font-size: 0.9rem;
     color: $GrayishBlue;
+    @include responsive(tablet) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    @include responsive(laptop-lg) {
+      font-size: 1rem;
+      max-width: 500px;
+    }
   }
 }
 
@@ -86,6 +161,14 @@
     color: $White;
     font-weight: 400;
   }
+  &__submit-btn {
+    font-size: 0.9rem;
+  }
+}
+
+::placeholder {
+  color: #d2d2d2;
+  font-size: 0.9rem;
 }
 
 // Footer Typography Styling
@@ -116,6 +199,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.9rem;
+    @include responsive(tablet) {
+      font-size: 0.8rem;
+    }
   }
   &__author {
     font-size: 0.7rem;

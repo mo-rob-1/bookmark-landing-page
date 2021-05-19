@@ -9,6 +9,10 @@
   &__wrapper {
     display: grid;
     gap: 2rem;
+    @include responsive(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+    }
   }
   &__dots {
     width: 100%;
@@ -23,5 +27,18 @@
   &__version {
     font-size: 0.9rem;
     color: $GrayishBlue;
+  }
+}
+
+.download-card:nth-child(2) {
+  @include responsive(tablet) {
+    position: relative;
+    top: 2rem;
+  }
+}
+.download-card:nth-child(3) {
+  @include responsive(tablet) {
+    position: relative;
+    top: 4rem;
   }
 }

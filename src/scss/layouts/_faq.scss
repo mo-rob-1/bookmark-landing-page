@@ -1,8 +1,21 @@
+@use '../abstracts' as *;
+
 .faq {
   margin-top: 6rem;
+  @include responsive(tablet) {
+    margin-top: 8rem;
+  }
   &__container {
     padding: 1rem;
     text-align: center;
+    @include responsive(mobile-md) {
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+    }
+    @include responsive(tablet) {
+      margin: 0 auto;
+      max-width: 600px;
+    }
   }
   &__accordion-wrapper {
     margin-top: 3rem;
