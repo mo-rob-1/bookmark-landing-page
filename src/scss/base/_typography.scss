@@ -43,6 +43,7 @@
   &__title {
     line-height: 1.5;
     color: $VeryDarkBlue;
+    font-size: 1.9rem;
     @include responsive(tablet) {
       text-align: left;
     }
