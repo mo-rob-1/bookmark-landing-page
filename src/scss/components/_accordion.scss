@@ -19,4 +19,11 @@
   color: $VeryDarkBlue;
   font-family: $PrimaryFont;
   font-weight: 400;
+  @include responsive(laptop-lg) {
+    font-size: 1.1rem;
+  }
+}
+
+.ac .ac-trigger:hover {
+  color: $SoftRed;
 }
