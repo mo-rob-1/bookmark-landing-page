@@ -6,6 +6,7 @@
   &__container {
     text-align: center;
     padding: 3rem 1rem;
+    padding-bottom: 4rem;
     @include responsive(mobile-md) {
       padding-left: 1.8rem;
       padding-right: 1.8rem;
@@ -13,7 +14,10 @@
     @include responsive(tablet) {
       margin: 0 auto;
       max-width: 600px;
-      padding: 4rem;
+      padding-top: 4rem 4rem 5rem 4rem;
+    }
+    @include responsive(laptop-lg) {
+      margin-top: 9rem;
     }
   }
 }
