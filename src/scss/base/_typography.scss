@@ -18,7 +18,9 @@
     }
   }
   &__nav-link:hover {
-    color: $SoftRed;
+    @include responsive(laptop) {
+      color: $SoftRed;
+    }
   }
   &__nav-link--mobile-border {
     @include responsive(laptop) {
