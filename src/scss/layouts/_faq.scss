@@ -5,6 +5,9 @@
   @include responsive(tablet) {
     margin-top: 8rem;
   }
+  @include responsive(laptop-lg) {
+    margin-top: 11rem;
+  }
   &__container {
     padding: 1rem;
     text-align: center;
