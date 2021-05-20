@@ -13,10 +13,19 @@
     @include responsive(laptop) {
       color: $VeryDarkBlue;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
     }
   }
+  &__nav-link:hover {
+    color: $SoftRed;
+  }
   &__nav-link--mobile-border {
+    @include responsive(laptop) {
+      color: $White;
+    }
+  }
+  &__nav-link--mobile-border:hover {
     @include responsive(laptop) {
       color: $White;
     }
@@ -34,6 +43,10 @@
     color: $VeryDarkBlue;
     @include responsive(tablet) {
       text-align: left;
+    }
+    @include responsive(laptop) {
+      font-size: 2.4rem;
+      width: 90%;
     }
     @include responsive(laptop-lg) {
       font-size: 2.7rem;
@@ -55,6 +68,11 @@
 
 // Features Typography Styling
 .features {
+  &__title {
+    @include responsive(laptop-lg) {
+      font-size: 1.7rem;
+    }
+  }
   &__desc {
     line-height: 1.6;
     font-size: 0.9rem;
@@ -68,11 +86,17 @@
     @include responsive(laptop) {
       font-size: 1.2rem;
     }
+    @include responsive(laptop-lg) {
+      font-size: 1.4rem;
+    }
   }
   &__tabDesc {
     line-height: 1.6;
     font-size: 0.9rem;
     color: $GrayishBlue;
+    @include responsive(tablet) {
+      margin-bottom: 1.3rem !important;
+    }
     @include responsive(laptop) {
       margin: 0 auto;
       max-width: 700px;
@@ -117,6 +141,9 @@
 .download {
   &__title {
     color: $VeryDarkBlue;
+    @include responsive(laptop-lg) {
+      font-size: 1.7rem;
+    }
   }
   &__desc {
     line-height: 1.6;
@@ -133,6 +160,9 @@
   &__title {
     color: $VeryDarkBlue;
     line-height: 1.5;
+    @include responsive(laptop-lg) {
+      font-size: 1.7rem;
+    }
   }
   &__desc {
     line-height: 1.6;
@@ -155,11 +185,19 @@
     color: $White;
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    @include responsive(laptop-lg) {
+      margin-bottom: 1.8rem;
+    }
   }
   &__title-2 {
     color: $White;
     font-weight: 400;
+    line-height: 1.5;
+    @include responsive(laptop-lg) {
+      font-size: 1.7rem;
+    }
   }
   &__submit-btn {
     font-size: 0.9rem;
@@ -184,8 +222,15 @@
   &__twitter-icon {
     font-size: 1.6rem;
   }
-  &__fb-icon {
-    margin-right: 2.2rem;
+  &__fb-icon:hover,
+  &__twitter-icon:hover {
+    color: $SoftRed;
+  }
+  &__social-icon-link {
+    margin-right: 2.6rem;
+  }
+  &__social-icon-link:nth-child(2) {
+    margin-right: 0;
   }
   &__nav-list {
     margin-top: 2.8rem;
@@ -203,7 +248,10 @@
       font-size: 0.8rem;
     }
   }
+  &__nav-link:hover {
+    color: $SoftRed;
+  }
   &__author {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
