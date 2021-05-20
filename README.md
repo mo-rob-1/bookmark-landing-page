@@ -1,14 +1,42 @@
-# Front-end Boilerplate starter using Parcel and Sass
+# Frontend Mentor - Easybank landing page solution
 
-## How to use this repo
-1. Clone the repo
-2. In your terminal, run `npm install`
-3. In your terminal, run `npm start`
-You are good to go! It will watch all your files for changes automatically and live update your browser.
+This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## When you are ready to go to production
-1. In your terminal, run `npm run build`. The final version of your site will be in the `dist` folder.
+## Table of contents
 
-## If you run into problems
-- Make sure you have [Node.js](https://nodejs.org/en/) installed, which will include npm.
-- Check out [Parcel's documentation](https://parceljs.org/getting_started.html)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+### Screenshot
+
+![Screenshot](https://github.com/mo-rob-1/bookmark-landing-page/blob/main/src/images/screenshot.png)
+
+### Links
+
+- Live Site URL: [https://bookmark-landing-page-mrob.netlify.app/](https://bookmark-landing-page-mrob.netlify.app/)
+
+## My process
+
+### Built with
+
+- HTML5
+- Sass - 7-1 Folder Structure
+- JavaScript - Hamburger Menu, Tabs, Accordion
+- Parcel Bundler
+- BEM
+- Flexbox
+- CSS Grid
+- Mobile-first
