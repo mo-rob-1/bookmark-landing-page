@@ -375,11 +375,20 @@ body {
   .header__nav-link {
     color: #252b46;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
   }
+}
+.header__nav-link:hover {
+  color: #fa5757;
 }
 @media only screen and (min-width: 1024px) {
   .header__nav-link--mobile-border {
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header__nav-link--mobile-border:hover {
     color: #fff;
   }
 }
@@ -394,6 +403,12 @@ body {
 @media only screen and (min-width: 768px) {
   .hero__title {
     text-align: left;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 2.4rem;
+    width: 90%;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -418,6 +433,11 @@ body {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .features__title {
+    font-size: 1.7rem;
+  }
+}
 .features__desc {
   line-height: 1.6;
   font-size: 0.9rem;
@@ -436,10 +456,20 @@ body {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .features__tabTitle {
+    font-size: 1.4rem;
+  }
+}
 .features__tabDesc {
   line-height: 1.6;
   font-size: 0.9rem;
   color: #9194a1;
+}
+@media only screen and (min-width: 768px) {
+  .features__tabDesc {
+    margin-bottom: 1.3rem !important;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .features__tabDesc {
@@ -490,6 +520,11 @@ body {
 .download__title {
   color: #252b46;
 }
+@media only screen and (min-width: 1440px) {
+  .download__title {
+    font-size: 1.7rem;
+  }
+}
 .download__desc {
   line-height: 1.6;
   font-size: 0.9rem;
@@ -504,6 +539,11 @@ body {
 .faq__title {
   color: #252b46;
   line-height: 1.5;
+}
+@media only screen and (min-width: 1440px) {
+  .faq__title {
+    font-size: 1.7rem;
+  }
 }
 .faq__desc {
   line-height: 1.6;
@@ -527,11 +567,23 @@ body {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 1440px) {
+  .newsletter__title-1 {
+    margin-bottom: 1.8rem;
+  }
 }
 .newsletter__title-2 {
   color: #fff;
   font-weight: 400;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 1440px) {
+  .newsletter__title-2 {
+    font-size: 1.7rem;
+  }
 }
 .newsletter__submit-btn {
   font-size: 0.9rem;
@@ -548,8 +600,14 @@ body {
 .footer__fb-icon, .footer__twitter-icon {
   font-size: 1.6rem;
 }
-.footer__fb-icon {
-  margin-right: 2.2rem;
+.footer__fb-icon:hover, .footer__twitter-icon:hover {
+  color: #fa5757;
+}
+.footer__social-icon-link {
+  margin-right: 2.6rem;
+}
+.footer__social-icon-link:nth-child(2) {
+  margin-right: 0;
 }
 .footer__nav-list {
   margin-top: 2.8rem;
@@ -569,8 +627,11 @@ body {
     font-size: 0.8rem;
   }
 }
+.footer__nav-link:hover {
+  color: #fa5757;
+}
 .footer__author {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .header__container {
@@ -699,7 +760,7 @@ body {
     margin-top: 0;
     margin-right: 0;
     background-color: #fa5757;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border-radius: 0.4rem;
   }
@@ -934,6 +995,7 @@ body {
 .newsletter__container {
   text-align: center;
   padding: 3rem 1rem;
+  padding-bottom: 4rem;
 }
 @media only screen and (min-width: 375px) {
   .newsletter__container {
@@ -945,7 +1007,12 @@ body {
   .newsletter__container {
     margin: 0 auto;
     max-width: 600px;
-    padding: 4rem;
+    padding-top: 4rem 4rem 5rem 4rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .newsletter__container {
+    margin-top: 9rem;
   }
 }
 
@@ -969,6 +1036,7 @@ body {
     grid-template-rows: 1fr;
     gap: 3rem;
     padding: 2rem 1rem;
+    padding-top: 2.6rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1087,6 +1155,8 @@ body {
   background-color: #5368df;
   color: #fff;
   text-decoration: none;
+  position: relative;
+  top: 1rem;
 }
 
 .newsletter__submit-btn {
@@ -1104,7 +1174,6 @@ body {
   }
 }
 
-/* Create an active/current "tab button" class */
 .features__tab {
   display: flex;
   flex-direction: column;
@@ -1117,10 +1186,26 @@ body {
     grid-template-rows: 1fr;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .features__tab {
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .features__tab {
+    max-width: 820px;
+  }
+}
 .features__tab button.active {
   border-bottom: 4px solid #fa5757;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  width: 180px;
+}
+@media only screen and (min-width: 768px) {
+  .features__tab button.active {
+    width: 100%;
+  }
 }
 .features__tablinks {
   background-color: #fff;
@@ -1129,6 +1214,7 @@ body {
   padding: 1rem;
   margin-bottom: 0;
   cursor: pointer;
+  line-height: 1.6;
 }
 .features__tablinks:nth-child(3) {
   margin-right: 0;
@@ -1170,6 +1256,17 @@ body {
   margin-top: 3rem;
 }
 @media only screen and (min-width: 768px) {
+  .features__tabText-wrapper {
+    position: relative;
+    top: 4rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .features__tabText-wrapper {
+    left: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) {
   .features__tabText-wrapper--mid {
     position: relative;
     top: 4rem;
@@ -1185,12 +1282,24 @@ body {
 }
 .download-card__wrapper {
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 @media only screen and (min-width: 768px) {
   .download-card__wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    gap: 1.6rem;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .download-card__wrapper {
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .download-card__wrapper {
+    gap: 2.8rem;
   }
 }
 .download-card__dots {
@@ -1244,6 +1353,15 @@ body {
   color: #252b46;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+}
+@media only screen and (min-width: 1440px) {
+  .ac .ac-trigger {
+    font-size: 1.1rem;
+  }
+}
+
+.ac .ac-trigger:hover {
+  color: #fa5757;
 }
 
 .newsletter__form-wrapper {
