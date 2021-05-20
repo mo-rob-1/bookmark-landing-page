@@ -8,10 +8,18 @@
   padding-bottom: 2rem;
   &__wrapper {
     display: grid;
-    gap: 2rem;
+    gap: 2.5rem;
     @include responsive(tablet) {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr;
+      gap: 1.6rem;
+      margin-top: 3rem;
+    }
+    @include responsive(laptop) {
+      gap: 2rem;
+    }
+    @include responsive(laptop-lg) {
+      gap: 2.8rem;
     }
   }
   &__dots {
